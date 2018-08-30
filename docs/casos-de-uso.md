@@ -20,6 +20,24 @@
 
 4.O sistema contabiliza os valores dos produtos selecionados em uma comanda virtual agregada a conta do usuário.
 
+  ## Fluxo Alternativo 1: Cliente não finaliza a compra.
+  1.O usuário abre o carrinho de compra.
+   
+  2.Ele seleciona a opção “Voltar às Compras”
+  
+  3.O usuário continua sua compras.
+  
+  4.Volta para o item 2 do fluxo principal.
+  
+  ## Fluxo Alternativo 2: Cliente cancela a compra.
+  1.O usuário abre o carrinho de compras
+  
+  2.O usuário seleciona a opção cancelar compras
+  
+  3.O sistema retira os itens adicionados do carrinho zerando-o.
+
+  
+
 # CDU003 - Retirar Código
 
 ## Fluxo principal
