@@ -8,3 +8,5 @@
 * Guilherme Tobias
 * Marcella Bastos
 * Vitor figueiredo
+
+Queue-env.u73mqkgebm.sa-east-1.elasticbeanstalk.com
