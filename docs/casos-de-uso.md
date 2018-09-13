@@ -44,3 +44,17 @@
 1.O sistema, após o usuário ter finalizado a compra, vai gerar um código e irá apresentá-lo na tela.
 
 2.O usuário apresentará o código para receber seu pedido quando o atendente chegar com o pedido.
+
+
+
+# CDU004 – Consultar Histórico de Pedidos
+
+## Fluxo Principal
+1.O usuário seleciona em sua tela de perfil a opção “Histórico de Serviços”.
+
+2.O sistema mostra uma tela com os estabelecimentos em que foram efetuadas compras.
+
+3.O usuário seleciona o estabelecimento em que ver os seus pedidos.
+
+4.O sistema mostra os produtos que foram comprados pelo usuário, no estabelecimento selecionado. 
+
