@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  
+  height: 180px;
+  opacity: 1;
+  position: absolute;
+}
+
+.App-menu {
+  background-color: rgba(190,190,190,0.1);
+  height: 100vh;
+  height: 130px;
+  padding: 20px;
+  
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-body{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+html{ 
+  background: url(./imagens/back.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+li {
+  list-style:none;
+  padding:0;
+}
+
+#page {
+  display:grid;
+  grid-gap:15px 30px;
+  grid-template-areas:  "header header header"
+                        ". nav ."
+                        "main main main"
+                        "foot foot foot";
+  grid-template-columns:1fr 2fr 1fr;
+  grid-template-rows:75px 250px 1fr 1fr;
+  height:600px;
+  padding-top:75px;
+  width:100%;
+  color: chocolate;
+}
+
+#page > header {
+  align-items:center;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.5),rgba(255,255,255,0));
+  display:flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size:50px;
+  grid-area:header;
+  justify-content:center;
+}
+
+#page > #nav {
+  display:grid;
+  font-family: 'Montserrat', sans-serif;
+  justify-items: center;
+  grid-area:nav;
+  grid-template-areas: "button button button";
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#page > #nav > ul {
+  align-items:center;
+  background-color:rgba(255,255,255,0.7);
+  display:flex;
+  justify-content:center;
+  height:50px;
+  padding: 0;
+  position:relative;
+  width:150px;
+}
+
+#page > #nav > ul:hover {
+  animation-name:ulHover;
+  animation-duration:200ms;
+  animation-fill-mode: forwards;
+}
+@keyFrames ulHover {
+  from {background-color:rgba(255,255,255,0.7);}
+  to {background-color:rgba(255,255,255,0.9);}
+}
+
+#page > #nav > ul > li {
+  align-items:center;
+  background-color:rgba(255,255,255,0.7);
+  display:none;
+  height:50px;
+  left:0;
+  position:absolute;
+  width:100%;
+}
+
+#page > #nav > ul:hover > li {
+  display:flex;
+  justify-content:center;
+}
+#page > #nav > ul > li:hover {
+  background-color:rgba(255,255,255,0.9);
+  display:flex;
+  justify-content:center;
+}
+
+#page > #nav > #one > li { 
+  animation-name: ulOne;
+  animation-duration:500ms;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+@keyFrames ulOne {
+  from { opacity:0; }
+  to {opacity:1;}
+}
+
+#page > #nav > #two > li { 
+  animation-name:ulTwo;
+  animation-duration:300ms;
+  animation-fill-mode:forwards;
+  opacity:0;
+  transform: translateX(-50px);
+}
+@keyFrames ulTwo {
+  from {
+    opacity:0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}
+
+#page > #nav > #three > li {
+  animation-name: ulThree;
+  animation-duration:150ms;
+  animation-fill-mode:forwards;
+  transform: rotate(-15deg);
+}
+
+@keyFrames ulThree {
+  0% {
+    transform: rotate(-15deg);
+  }
+  90% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#page > #nav > ul > li:nth-child(1) {
+  top:100%;
+}
+#page > #nav > ul > li:nth-child(2) {
+  animation-delay:50ms;
+  top:200%;
+}
+#page > #nav > ul > li:nth-child(3) {
+  animation-delay:100ms;
+  top:300%;
+}
+
+#page > main {
+  grid-area:main;
+  background-color:rgba(255,255,255,0.7)
+}
+
+#page > footer {
+  grid-area:foot;
+  background-color:rgba(255,255,255,0.7)
+}
