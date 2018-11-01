@@ -58,7 +58,7 @@
 
 4.O sistema mostra os produtos que foram comprados pelo usuário, no estabelecimento selecionado. 
 
-  ##Fluxo Alternativo 1: Não Possui Nenhuma Compra
+  ## Fluxo Alternativo 1: Não Possui Nenhuma Compra
   1.O usuário abre a opção "Histórico de Serviços".
   
   2.O sistema mostra, com uma mensagem na tela, que o usuário que não possui nenhum compra efetuada ainda.
