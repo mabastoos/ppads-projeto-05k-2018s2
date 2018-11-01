@@ -61,6 +61,6 @@
   ## Fluxo Alternativo 1: Cliente não possui nenhuma compra
   1.O usuário abre a opção "Histórico de Serviços".
   
-  2.O sistema mostra, com uma mensagem na tela, que o usuário que não possui nenhum compra efetuada ainda.
+  2.O sistema mostra, com uma mensagem na tela, que o usuário que não possui nenhuma compra efetuada ainda.
   
   3.O usuário seleciona a opção de voltar.
