@@ -7,9 +7,9 @@
      
      
   ## Cancelar Compra:
-      -Entrada: Selecionar produtos; selecionar "Carrinho de Compras"; Selecionar opção de cancelar compra.
+      -Entrada: Selecionar produtos; selecionar "Cancelar pedido"; Selecionar opção de cancelar compra.
       
-      -Retorno Esperado: Volta para página inicial do estabelecimento
+      -Retorno Esperado: Limpar area que exibe o conteudo do pedido.
       
       
   ## Não Finalizar Compra:
@@ -19,16 +19,12 @@
       
       
   ## Retirar Código do Pedido para Atendimento:
-      -Entrada: Selecionar produtos; selecionar "Carrinho de Compras"; Selecionar "Finalizar Pedido"; Selecionar "Gerar Código".
+      -Entrada: Selecionar produtos; Preencher informações necessárias;selecionar "Faça o pedido!";  
       
       -Retorno Esperado: Código gerado com sucesso na tela.
       
       
-  ## Consultar Histórico de pedidos de um determinado estabelecimento:
-      -Entrada: Selecionar Perfil; Selecionar "Histórico de Serviços"; Selecionar estabelecimento com compras;
-      
-      -Retorno Esperado: Ver as compras efetuadas no estabelecimento selecionado.
-      
+  
       
       
       
