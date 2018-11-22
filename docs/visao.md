@@ -22,10 +22,7 @@ identidade do restaurante, e nivel de satifasção do cliente, possibilitando um
 
 ## Quais linguagens/tecnologias serão utilizadas para implementar este software?
 
-* Angular js
-* React
-* Sql
+* CSS
+* HTML
 * JavaScript
-* Oracle 
-* Node js
 
