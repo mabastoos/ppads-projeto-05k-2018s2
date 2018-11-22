@@ -1,9 +1,9 @@
 # Plano de Teste
 
   ## Efetuar Pedido:
-     -Entrada: Selecionar produtos; selecionar "Carrinho de Compras"; Selecionar "Finalizar Pedido".    
+     -Entrada: Selecionar produtos; Preencher dados solicitados; Selecionar "Faça o pedido!".    
      
-     -Retorno Esperado: Comanda Virtual do usuário e opção de "Gerar Código"
+     -Retorno Esperado: Mostrar produtos selecionados, embaixo do texto "Seu pedido".
      
      
   ## Cancelar Compra:
