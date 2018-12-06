@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Peça comida</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.22.2/sweetalert2.min.css" rel="stylesheet"/></head><script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.22.2/sweetalert2.min.js"></script>
+
+<script>
+    
+    function texto(){
+      document.getElementById('deliverItButton').innerHTML = 'Pedido realizado :)';
+
+
+    }
+
+    function cancelar() {
+  swal('Pedido cancelado');
+  //document.getElementById("pedido_item").innerHTML="";
+  document.getElementById("pedido_item").remove();
+var questoes = $('#pedido_item');
+$.each(questoes, function(num, questao){
+	$(this).remove();
+    //document.getElementById("pedido_item").remove();
+});
+var textarea = document.querySelector('textarea');
+		textarea.value = "";
+  };
+
+  function aleatorios(){
+
+
+var Pedido
+Pedido = Math.round(Math.random()*20000)
+//pode colocar qqr numero ai
+// Para Mostrar em uma janela..
+alert("Seu Pedido é de Nr.: "+"NSNR"+Pedido);
+//Para imprimir na Tela
+document.write( "Pedido Nr.: "+"NSNR"+Pedido);
+  }
+    </script>
+	
+<script>
+	function txtArea(){
+		var textarea = document.querySelector('textarea');
+		var assinatura = '\n\nCumprimentos,\nSuper heroi.'
+		textarea.value += assinatura;
+	}
+</script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Order Food Eat Food</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="orders.html">Peça comida</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="page-header">
+        <h1>Peça comida. <small>Por que o Hamburguer foi preso? Por que ele matou a fome.</small></h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="http://i.imgur.com/nXa5Dez.jpg" alt="burgers">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h3>Fome? <small>Temos a solução para você.</small></h3>
+          <!-- FORM STARTS HERE -->
+          <form action="enviar.php" method="post" id="form_email" name="form_email">
+            <h4>Menu</h4>
+            <div><p class="menuDownload"></p></div>
+            <div class="row">
+              <div class="col-md-12">
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <fieldset class="form-group">
+                  <label for="quantity">Quantidade</label>
+                  <input type="text" class="form-control" id="quantity" name="Quantity" value="1" />
+                </fieldset>
+              </div>
+              <div class="col-md-5">
+                <button id="orderWindow" type="Add" class="btn btn-primary orderButton">Adicionar ao pedido</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <hr>
+              </div>
+            </div>
+			<textarea name="txtarea" rows="4" cols="50" hidden></textarea>
+            <fieldset class="form-group">
+              <label for="Name">Nome</label>
+              <input type="text" class="form-control" id="name" name="inputNome" title="inputNome" required>
+            </fieldset>
+            <fieldset class="form-group">
+              <label for="InputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" name="inputEmail" title="inputEmail" placeholder="Enter your email, please" required>
+              <small class="text-muted">Não se preocupe. Sem spam. Apenas comida</small>
+            </fieldset>
+            
+            <fieldset class="form-group">
+              <label for="PhoneNumber">Celular:</label>
+              <input type="phone" class="form-control" id="phoneNumber">
+            </fieldset>
+            <button id="deliverItButton" type="submit" onclick="submit()" class="btn btn-primary btn-lg btn-block" >   Faça o pedido!</button>
+			<!-- button id="deliverItButton" type="submit" onclick="submit()" class="btn btn-primary btn-lg btn-block"  Onclick="aleatorios()" href="pages/orderConfirmation.html">   Faça o pedido!</button>
+			<input type="submit" value="Enviar">-->
+          </form>
+        </div>
+        <div  class="col-md-4">
+          <h3>Seu pedido:</h3>
+          <div id ="pedido">
+          <p class="orderPreview"></p>
+          <ul id="list">
+          </ul>
+          <button onclick="cancelar()">Cancelar pedido</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center"><hr><h4>Problemas com o pedido? Comunique o garçom mais proximo.</h4><hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            <a href="www.facebook.com"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center"><p><small>&copy; Coma comida.Seja feliz</small></p>
+        </div>
+        <div class="col-md-12 text-center"><p><small>Feito com amor Queue S2.</small></p>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="../script.js"></script>
+  </body>
+</html>
