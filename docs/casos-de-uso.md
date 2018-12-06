@@ -47,20 +47,21 @@
 
 
 
-# CDU004 – Consultar Histórico de Pedidos
+# CDU004 – Envio de email
 
 ## Fluxo Principal
-1.O usuário seleciona em sua tela de perfil a opção “Histórico de Serviços”.
+1.O usuário realiza o pedido.
 
-2.O sistema mostra uma tela com os estabelecimentos em que foram efetuadas compras.
+2.O código do pedido é gerado.
 
-3.O usuário seleciona o estabelecimento que deseja ver os seus pedidos.
+3.O usuário recebe email de "Foodmack" com a descrição do pedido e o código do pedido.
 
-4.O sistema mostra os produtos que foram comprados pelo usuário, no estabelecimento selecionado. 
+4.0 o restaurante recebe o mesmo email no email responsavel por mostrar aos funcionarios quais pedidos foram realizados.
 
-  ## Fluxo Alternativo 1: Cliente não possui nenhuma compra
-  1.O usuário abre a opção "Histórico de Serviços".
+
+  ## Fluxo Alternativo 1: 
+  1.O usuário pode selecionar email enviados de caminho com spam, e nao receber o email.
   
-  2.O sistema mostra, com uma mensagem na tela, que o usuário que não possui nenhuma compra efetuada ainda.
+  2.0 
   
-  3.O usuário seleciona a opção de voltar.
+
